@@ -1,6 +1,17 @@
 # hadees-cli
 
-Command-line tool that shows a hadith in your terminal and supports local hadith cache sync.
+## What is this project?
+
+**hadees-cli** (also installed as `hadees`) is a Node.js / TypeScript command-line tool that brings authentic Islamic hadith entries into your terminal, with daily reminders, search, categories, favorites, and a local hadith cache that can sync from a remote source.
+
+## What does it do?
+
+- **Displays a hadith in your terminal** — a daily entry, a random one, or a specific one by id.
+- **Searches** the hadith corpus by text and lists **categories** of entries.
+- **Tracks favorites** so you can save, list, and remove entries you want to revisit.
+- **Runs on shell startup** via a `startup` command you can hook into `.bashrc`, `.zshrc`, or your PowerShell `$PROFILE` to see a hadith every time you open a terminal.
+- **Maintains a local cache** of English hadith data and can **scrape / sync** the full cache from a remote source, falling back to seed hadiths when offline.
+- **Supports machine-readable output** with `-j/--json` and compact output with `-p/--plain` on most content commands.
 
 ## Requirements
 
